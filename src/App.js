@@ -1,24 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from './Components/Header.js';
+import About from './Components/About.js';
+import Experience from './Components/Experience.js';
+import Education from './Components/Education.js';
+import info from './Components/ComponentAssest/HomeDetails.js';
+import infoBodyOne from './Components/ComponentAssest/ExperienceDetails.js';
+import infoBodyTwo from './Components/ComponentAssest/EducationDetails.js';
+import Project from './Components/Project.js';
+import Footer from './Components/Footer.js';
+import {BrowserRouter} from  'react-router-dom';
+
 
 function App() {
+
+
+  let Style = {
+   backgroundColor : '#412c7e2b',
+    }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <Header />
+        <About Style={Style} title={info.title} details={info.details} />
+        <Experience
+          title={infoBodyOne.title}
+          details={infoBodyOne.details}
+          Style={Style}
+        />
+        <Education
+          title={infoBodyTwo.title}
+          details={infoBodyTwo.details}
+          Style={Style}
+        />
+        <Project Style={Style} />
+        <Footer />
+      </div>
+    </BrowserRouter>
   );
 }
 
