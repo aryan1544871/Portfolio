@@ -31,7 +31,6 @@ function App() {
           details={infoBodyTwo.details}
           Style={Style}
         />
-        <Project Style={Style} />
         <Footer />
       </div>
     </BrowserRouter>
