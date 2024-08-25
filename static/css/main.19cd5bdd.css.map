@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/main.19cd5bdd.css","mappings":"AAAA,KAAK,2BAA4B,CAC7B,iCACJ","sources":["Components/ComponentAssest/Header.css"],"sourcesContent":[".nav{--bs-nav-link-color: #f6faff;\r\n    --bs-nav-link-hover-color: #5745a8;\r\n} \r\n\r\n\r\n  "],"names":[],"sourceRoot":""}
