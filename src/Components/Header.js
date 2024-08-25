@@ -23,11 +23,6 @@ export default function Header(props) {
               </Link>
             </li>
             <li class="nav-item">
-              <Link to="#projects" class="nav-link ">
-                Projects
-              </Link>
-            </li>
-            <li class="nav-item">
               <Link to="#contacts" class="nav-link ">
                 Contacts
               </Link>
